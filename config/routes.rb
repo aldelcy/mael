@@ -1,6 +1,8 @@
 Mael::Application.routes.draw do
   
-  root :to => 'site#home'
+  devise_for :users
+
+  root :to => 'site#first_landing'
   
 
 
