@@ -49,7 +49,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-
 # EXTERNAL GEMS
 gem 'stripe'
 gem 'font-awesome-sass'
@@ -59,3 +58,4 @@ gem 'factory_girl_rails'
 gem 'faker'
 gem 'database_cleaner'
 gem 'better_errors' # Better Errors
+gem 'devise'
