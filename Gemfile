@@ -59,3 +59,5 @@ gem 'faker'
 gem 'database_cleaner'
 gem 'better_errors' # Better Errors
 gem 'devise'
+
+gem 'rails_12factor', group: :production
