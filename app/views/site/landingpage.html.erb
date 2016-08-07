@@ -1,1 +1,51 @@
-LANDING PAGE
+<div class="landing_top">
+	<div class="landing_logo">
+		<img src="/assets/mael_logo_mustard.png" width="100%">
+	</div>
+	<a href="#start">
+		<div class="l_arrow_bottom"><span class="ion-chevron-down"></span></div>
+	</a>
+</div>
+
+<div id="start" class="first_panel bg_fixed">
+	<div class="text"> asdasdas dasdasd asdasda</div><br>
+	<div class="text"> dasdasd asdasda</div>
+</div>
+
+<div id="start" class="second_panel">
+	<div class="half bowtie">
+
+	</div>
+	<div class="half" style="display:inline-block;">
+		<h2>Bowties</h2>
+	</div>
+</div>
+
+<div id="start" class="contact_panel">
+	<div class="bg_scroll" style="background-image: url(/assets/contact_panel.jpg);">
+
+	    <div class="half">
+			<h2>Bowties</h2>
+		</div>
+		<div class="half" style="border:1px white solid; padding:20px;">
+			<!-- <div style="position:relative; top:-30px; background-color: white; padding: 10px; width: 200px; margin: 0 auto; font-size:20px;">CONTACT US</div> -->
+			<div style="padding: 10px; width: 300px; margin: 0 auto 40px; color: white; font-size:30px;">CONTACT US</div>
+			<%= form_for @newcontact do |form| %>
+				<%= form.text_field :firstname, placeholder:'First name', class:'half' %>
+				<%= form.text_field :lastname, placeholder:'Last name', class:'half' %>
+				<%= form.text_field :email, placeholder:'email', class:'full' %>
+				<%= form.text_field :phone_number, placeholder:'Phone Number', class:'full' %>
+				<%= form.text_area :contact_message, placeholder:'enter message here', class:'full' %>
+				<%= form.submit 'Send Message', class:'half big_btn blue' %>
+			<% end %>
+		</div>
+
+	</div>
+</div>
+
+<div id="start" class="newsletter_panel">
+	<div class="title">Join our NEWSLETTER</div>
+</div>
+<div id="start" class="footer_panel">
+
+</div>

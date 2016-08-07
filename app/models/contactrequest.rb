@@ -1,0 +1,2 @@
+class Contactrequest < ApplicationRecord
+end

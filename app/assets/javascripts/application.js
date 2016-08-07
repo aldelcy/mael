@@ -14,3 +14,20 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+var pageReady = function(){
+
+	$('.l_arrow_bottom').click(function(event){
+		event.preventDefault();
+
+		$('html, body').animate({
+        	scrollTop: $(".first_panel").offset().top
+    	}, 2000);
+
+	});
+
+	
+
+};
+
+$(document).ready(pageReady);
+$(document).on('page:load', pageReady);
