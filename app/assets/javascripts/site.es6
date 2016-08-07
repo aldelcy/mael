@@ -19,9 +19,13 @@ var pageReady = function(){
 		$('.js-form').addClass('white');
 		
 		var submitted = `Submitted to Newsletter<br><br>`;
-		var checkmark = `<img src="/assets/checkmark2.gif" width="100px">`;
+		var checkmark = `<img src="/assets/checkmark2.gif" width="100px"><br><br>`;
+		var social_media = `<a href="https://www.facebook.com/MaelCreations/"><div class="social_icon"><img src="/assets/facebook.png"></div></a>`+
+ 						   `<a href="https://www.instagram.com/MaelCreations/"><div class="social_icon"><img src="/assets/instagram.png"></div></a>`+
+ 						   `<br>`+
+ 						   `<div class="findus">find us on social media</div>`;
 
-		setInterval(function(){ $('.js-form').html(submitted + checkmark); }, 1000);
+		setInterval(function(){ $('.js-form').html(submitted + checkmark + social_media); }, 1000);
 	});	
 };
 
