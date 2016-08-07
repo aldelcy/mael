@@ -345,6 +345,9 @@ input[type="submit"], button{
       float: right; margin:10px;
     }
   }
+  .contact_panel_top{
+    height: 250px;
+  }
   .contact_panel{
     padding:100px 20px; overflow:hidden;
     background-image: url('/assets/contact_panel_blur.jpg');
