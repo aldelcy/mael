@@ -53,6 +53,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'stripe'
 gem 'font-awesome-sass'
 gem 'carrierwave'
+gem 'sprockets'
+gem 'sprockets-es6'
 
 gem 'factory_girl_rails'
 gem 'faker'

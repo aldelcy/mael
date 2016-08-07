@@ -1,49 +1,96 @@
 <div class="landing_top">
-	<div class="landing_logo">
-		<img src="/assets/mael_logo_mustard.png" width="100%">
+	<div class="landing_logo" style="text-align:center;">
+		<img src="/assets/bowtie.jpg" width="70%" style="margin-bottom:50px;"><br><br>
+		<img src="/assets/home.png" width="100%">
 	</div>
+	<a href="#stayintouch">
+		<div class="stayintouch">Stay in touch</div>
+	</a>
 	<a href="#start">
 		<div class="l_arrow_bottom"><span class="ion-chevron-down"></span></div>
 	</a>
 </div>
 
 <div id="start" class="first_panel bg_fixed">
-	<div class="text"> asdasdas dasdasd asdasda</div><br>
-	<div class="text"> dasdasd asdasda</div>
+
+	<div class="panel_text big"> Unique design and creation</div><br>
+	<div class="panel_text">of Bow ties and accessories </div><br>
+	<div class="panel_text">for your little prince</div>
 </div>
+
 
 <div id="start" class="second_panel">
-	<div class="half bowtie">
+	<div class="title"> About<img src="/assets/about.png"></div>
 
+	<div class="text">
+		We want their present to promote and set the expectation for their future. We want to teach them from an early age to be mindful of their apparence by dressing in accordance with who they are to become. We are in the business of raising distinguished little princes, Disciples and chiefs! we are dressing them For the future
 	</div>
-	<div class="half" style="display:inline-block;">
-		<h2>Bowties</h2>
-	</div>
+
 </div>
 
+<div id="start" class="contact_panel_top newsletter"></div>
 <div id="start" class="contact_panel">
 
     <div class="half">
-		<h2>Bowties</h2>
+		<h2>Stay in touch</h2>
+		<div class="text">
+			We will be launching our online store very soon.<br>
+			Be the first to be updated on the GRAND OPENING.<br><br>
+			<img src="/assets/about.png" width="100px">
+
+		</div> 
 	</div>
-	<div class="half" style="border:1px white solid; padding:20px;">
-		<!-- <div style="position:relative; top:-30px; background-color: white; padding: 10px; width: 200px; margin: 0 auto; font-size:20px;">CONTACT US</div> -->
-		<div style="padding: 10px; width: 300px; margin: 0 auto 40px; color: white; font-size:30px;">CONTACT US</div>
-		<%= form_for @newcontact do |form| %>
-			<%= form.text_field :firstname, placeholder:'First name', class:'half' %>
-			<%= form.text_field :lastname, placeholder:'Last name', class:'half' %>
-			<%= form.text_field :email, placeholder:'email', class:'full' %>
-			<%= form.text_field :phone_number, placeholder:'Phone Number', class:'full' %>
-			<%= form.text_area :contact_message, placeholder:'enter message here', class:'full' %>
-			<%= form.submit 'Send Message', class:'half big_btn blue' %>
-		<% end %>
+
+	<div class="half js-form">
+		<div style="padding: 10px; max-width: 500px; margin: 0 auto 40px; color: white; font-size:30px;">Join our Newsletter</div>
+		<div class="js-theForm">
+			<%= form_for @newcontact, remote: true do |form| %>
+				<%= form.text_field :firstname, placeholder:'First name', class:'half' %>
+				<%= form.text_field :lastname, placeholder:'Last name', class:'half' %>
+				<%= form.text_field :email, placeholder:'email', class:'full' %>
+				<%= form.submit 'Send Message', class:'half big_btn blue' %>
+			<% end %>
+		</div>
 	</div>
-	
+
 </div>
 
-<div id="start" class="newsletter_panel">
-	<div class="title">Join our NEWSLETTER</div>
-</div>
-<div id="start" class="footer_panel">
 
+
+<div id="start" class="product_panel">
+
+	<img class='main_product_photo' src="/assets/product.jpg">
+	<br>
+
+
+	<div class="product_thumbnail_border"> <div class="product_thumbnail">
+		<img src="/assets/products/fabrics/2.jpg" width="100%">
+	</div></div>
+	<div class="product_thumbnail_border"> <div class="product_thumbnail">
+		<img src="/assets/products/fabrics/5.jpg" width="100%">
+	</div></div>
+	<div class="product_thumbnail_border"> <div class="product_thumbnail">
+		<img src="/assets/products/fabrics/4.jpg" width="100%">
+	</div></div>
+	<div class="product_thumbnail_border"> <div class="product_thumbnail">
+		<img src="/assets/products/fabrics/22.jpg" width="100%">
+	</div></div>
+	<div class="product_thumbnail_border"> <div class="product_thumbnail">
+		<img src="/assets/products/fabrics/5.jpg" width="100%">
+	</div></div>
+	<div class="product_thumbnail_border"> <div class="product_thumbnail">
+		<img src="/assets/products/fabrics/9.jpg" width="100%">
+	</div></div>
+
+	<div class="andmuchmore">and much more...</div>
+
+</div>
+
+
+
+<div class="footer_panel">
+ <a href="https://www.facebook.com/MaelCreations/"><div class="social_icon"><img src="/assets/facebook.png"></div></a>
+ <a href="https://www.instagram.com/MaelCreations/"><div class="social_icon"><img src="/assets/instagram.png"></div></a>
+ <br>
+ find us on social media
 </div>

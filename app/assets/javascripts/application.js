@@ -25,7 +25,14 @@ var pageReady = function(){
 
 	});
 
-	
+	$('.stayintouch').click(function(event){
+		event.preventDefault();
+
+		$('html, body').animate({
+        	scrollTop: $(".newsletter").offset().top
+    	}, 2000);
+
+	});
 
 };
 
