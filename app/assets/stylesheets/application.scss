@@ -256,7 +256,6 @@ input[type="submit"], button{
 }
 
 .first_panel,{
-  height: 100%;
   overflow:hidden;
 }
 
@@ -326,6 +325,9 @@ input[type="submit"], button{
 
 
 @media only screen and (max-width: 480px) {
+  .landing_top{
+    padding-top: 5%;
+  }
   .half{
     width: 98%; margin:1%; float: left;
     &.bowtie{
@@ -334,7 +336,7 @@ input[type="submit"], button{
   }
   .first_panel{
     background-image: url('/assets/first_panel_phone.jpg');
-    padding-top:70%; padding-right:5%;
+    padding-top:80%; padding-right:5%;
     background-size:cover;
     & .panel_text{
       font-family: 'altera_bold';
